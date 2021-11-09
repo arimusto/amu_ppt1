@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  server:
+    build:
+      context: .
+      dockerfile: server.Dockerfile
+    hostname: server.docker
+    environment:
+      - TZ=Europe/Helsinki
+    volumes:
+      - ./servervol:/serverdata
+    ports:
+      - 5000:5000
+
+  client:
+    build:
+      context: .
+      dockerfile: client.Dockerfile
+    hostname: client.docker
+    environment:
+      - TZ=Europe/Helsinki
+    volumes:
+      - ./clientvol:/clientdata
+
+volumes:
+  servervol:
+  clientvol:
