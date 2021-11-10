@@ -22,6 +22,8 @@ services:
       - TZ=Europe/Helsinki
     volumes:
       - ./clientvol:/clientdata
+    ports:
+      - 80:80
 
 volumes:
   servervol:
