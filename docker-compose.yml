@@ -10,8 +10,6 @@ services:
       - TZ=Europe/Helsinki
     volumes:
       - ./servervol:/serverdata
-    # ports:
-    #   - 5000:5000
 
   client:
     build:

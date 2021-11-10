@@ -4,6 +4,9 @@
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
 __pycache__/
+servervol/file.txt
+servervol/md5hash.txt
+clientvol/file.txt
 
 # User-specific files
 *.rsuser
